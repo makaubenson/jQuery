@@ -59,7 +59,7 @@
       </ul>
       <!--inputs-->
       <input type="button" value="Button 1" />
-      <input type="submit" value="Button 1" />
+      <input type="submit" value="Submit" />
       <input type="text" />
     </div>
     <script>
@@ -75,7 +75,8 @@
       $("ul#list li:nth-child(3n)").css("list-style", "none");
 
       //Inputs Manipulation
-      $(":button").hide(); //hide buttons whose type ='button'
+      // $(":button").hide(); //hide buttons whose type ='button'
+      $(":submit").hide(); //hide buttons whose type ='submit'
     </script>
   </body>
 </html>
