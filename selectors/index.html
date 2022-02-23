@@ -61,6 +61,11 @@
       <input type="button" value="Button 1" />
       <input type="submit" value="Submit" />
       <input type="text" />
+      <hr />
+      <!--Links-->
+      <a href="https://google.com">Google</a>
+
+      <a href="https://yahoo.com">Yahoo</a>
     </div>
     <script>
       //$("h1").hide();
@@ -68,6 +73,7 @@
       // $("h1.heading2").hide();
       // $("p span").css("color", "red");
 
+      //list manipulation
       $("ul#list li:first").css("color", "red");
       $("ul#list li:last").css("color", "green");
       $("ul#list li:even").css("background-color", "yellow");
@@ -76,8 +82,11 @@
 
       //Inputs Manipulation
       // $(":button").hide(); //hide buttons whose type ='button'
-      $(":submit").hide(); //hide buttons whose type ='submit'
-      $(":text").hide(); //hide input whose type =text'
+      // $(":submit").hide(); //hide buttons whose type ='submit'
+      // $(":text").hide(); //hide input whose type =text'
+
+      //links manipulation
+      $("[href]").css("color", "red");
     </script>
   </body>
 </html>
