@@ -47,6 +47,7 @@
         <span>Amet nemo nihil sequi quibusdam,</span> modi reiciendis ut sint
         numquam quo quisquam!
       </p>
+      <!--list-->
       <ul id="list">
         <li>List Item</li>
         <li>List Item</li>
@@ -56,6 +57,10 @@
         <li>List Item</li>
         <li>List Item</li>
       </ul>
+      <!--inputs-->
+      <input type="button" value="Button 1" />
+      <input type="submit" value="Button 1" />
+      <input type="text" />
     </div>
     <script>
       //$("h1").hide();
@@ -68,6 +73,9 @@
       $("ul#list li:even").css("background-color", "yellow");
       $("ul#list li:odd").css("background-color", "blue");
       $("ul#list li:nth-child(3n)").css("list-style", "none");
+
+      //Inputs Manipulation
+      $(":button").hide(); //hide buttons whose type ='button'
     </script>
   </body>
 </html>
