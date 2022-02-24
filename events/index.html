@@ -80,9 +80,19 @@
         // Mouse Leave
         $("#btn1").on("mouseleave", function () {
           $(".para1").show();
-        });*/
+        });
         // Mouse Move
         $("#btn1").on("mousemove", function () {
+          $(".para1").toggle();
+        });*/
+
+        //Mouse Down
+        $("#btn1").on("mousedown", function () {
+          $(".para1").toggle();
+        });
+
+        //Mouse Up
+        $("#btn1").on("mouseup", function () {
           $(".para1").toggle();
         });
       });
