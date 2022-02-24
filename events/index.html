@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jQuery Crash Course | Selectors</title>
+    <title>jQuery Crash Course |Events</title>
     <!--Jquery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
@@ -33,7 +33,15 @@
     <header>
       <h1>Jquery Crash Course</h1>
     </header>
-    <div class="container"></div>
-    <script></script>
+    <div class="container">
+      <h3>Mouse Events</h3>
+      <button id="btn1">Button 1</button>
+      <button id="btn2">Button 2</button>
+    </div>
+    <script>
+      $("#btn1").click(function () {
+        alert("Button 1 was Clicked");
+      });
+    </script>
   </body>
 </html>
