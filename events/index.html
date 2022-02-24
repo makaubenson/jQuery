@@ -44,13 +44,13 @@
     </div>
     <script>
       $(document).ready(function () {
+        //Click Events
         /*$("#btn1").click(function () {
           alert("Button 1 was Clicked");
         });*/
         /*$("#btn1").on("click", function () {
           alert("Button 1 was Clicked");
         });*/
-
         /*$("#btn1").click(function () {
           $(".para1").hide();
         });*/
@@ -58,7 +58,17 @@
         $("#btn2").click(function () {
           $(".para1").show();
         });*/
-        $("#btn1").click(function () {
+        /*$("#btn1").click(function () {
+          $(".para1").toggle();
+        });*/
+        //Doble Click
+
+        $("#btn1").dblclick(function () {
+          $(".para1").toggle();
+        });
+
+        //Hover
+        $("#btn1").hover(function () {
           $(".para1").toggle();
         });
       });
