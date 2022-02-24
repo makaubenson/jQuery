@@ -61,15 +61,24 @@
         /*$("#btn1").click(function () {
           $(".para1").toggle();
         });*/
-        //Doble Click
 
+        /* //Doble Click
         $("#btn1").dblclick(function () {
           $(".para1").toggle();
-        });
+        });*/
 
         //Hover
-        $("#btn1").hover(function () {
+        /* $("#btn1").hover(function () {
           $(".para1").toggle();
+        });*/
+
+        // Mouse Enter
+        $("#btn1").on("mouseenter", function () {
+          $(".para1").hide();
+        });
+        // Mouse Leave
+        $("#btn1").on("mouseleave", function () {
+          $(".para1").show();
         });
       });
     </script>
