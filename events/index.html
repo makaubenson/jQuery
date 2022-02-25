@@ -47,7 +47,7 @@
         <label>Name</label><br />
         <input type="text" id="name" name="name" /><br />
         <label>Email</label><br />
-        <input type="email" id="email" name="email" /><br />
+        <input type="text" id="email" name="email" /><br />
         <label>Gender</label><br />
         <select name="gender" id="gender">
           <option value="male">Male</option>
@@ -146,7 +146,8 @@
         //SUBMIT
         $("#form").submit(function (e) {
           e.preventDefault();
-          console.log("Submitted");
+          var name = $("input#name").val();
+          console.log(name);
         });
       });
     </script>
