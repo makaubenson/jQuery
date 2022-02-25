@@ -41,7 +41,7 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate
         libero quae, molestiae blanditiis quo itaque provident cum rem nemo.
       </p>
-      <h1 id="coords"></h1>
+      <!-- <h1 id="coords"></h1> -->
       <hr />
       <form>
         <label>Name</label><br />
@@ -119,10 +119,13 @@
         });
         $(document).on("mousemove", function (e) {
           $("#coords").html("Coords: Y: " + e.clientY + "X: " + e.clientX);
-        });*/
+        });
 
         $(document).on("mousemove", function (e) {
           $("#coords").html("Coords: Y: " + e.clientY + "X: " + e.clientX);
+        });*/
+        $("input").focus(function () {
+          alert("Focus");
         });
       });
     </script>
