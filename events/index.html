@@ -124,8 +124,16 @@
         $(document).on("mousemove", function (e) {
           $("#coords").html("Coords: Y: " + e.clientY + "X: " + e.clientX);
         });*/
+
+        //FOCUS
         $("input").focus(function () {
-          alert("Focus");
+          // alert("Focus");
+          $(this).css("background", "skyblue");
+        });
+        //BLUR
+        $("input").blur(function () {
+          // alert("Focus");
+          $(this).css("background", "white");
         });
       });
     </script>
