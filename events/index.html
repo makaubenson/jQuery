@@ -35,12 +35,13 @@
     </header>
     <div class="container">
       <h3>Mouse Events</h3>
-      <button id="btn1">Button 1</button>
+      <button id="btn1" class="btnClass" style="padding: 10%">Button 1</button>
       <button id="btn2">Button 2</button>
       <p class="para1">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate
         libero quae, molestiae blanditiis quo itaque provident cum rem nemo.
       </p>
+      <h1 id="coords"></h1>
     </div>
     <script>
       $(document).ready(function () {
@@ -84,7 +85,7 @@
         // Mouse Move
         $("#btn1").on("mousemove", function () {
           $(".para1").toggle();
-        });*/
+        });
 
         //Mouse Down
         $("#btn1").on("mousedown", function () {
@@ -94,6 +95,20 @@
         //Mouse Up
         $("#btn1").on("mouseup", function () {
           $(".para1").toggle();
+        });
+        $("#btn1").click(function (e) {
+          //alert(e);
+          // alert(e.currentTarget.id);
+          // alert((e.currentTarget.innerHTML));
+          //alert(e.currentTarget.outerHTML);
+          //alert(e.currentTarget.className);
+        });
+        $(document).on("mousemove", function (e) {
+          $("#coords").html("Coords: Y: " + e.clientY + "X: " + e.clientX);
+        });*/
+
+        $(document).on("mousemove", function (e) {
+          $("#coords").html("Coords: Y: " + e.clientY + "X: " + e.clientX);
         });
       });
     </script>
