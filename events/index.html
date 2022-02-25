@@ -123,7 +123,7 @@
 
         $(document).on("mousemove", function (e) {
           $("#coords").html("Coords: Y: " + e.clientY + "X: " + e.clientX);
-        });*/
+        });
 
         //FOCUS
         $("input").focus(function () {
@@ -138,6 +138,10 @@
         //KEYUP
         $("input").keyup(function (e) {
           console.log(e.target.value);
+        });*/
+        //CHANGE
+        $("select#gender").change(function () {
+          alert("Changed");
         });
       });
     </script>
