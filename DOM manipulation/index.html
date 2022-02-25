@@ -27,6 +27,10 @@
         margin: auto;
         padding: 10px;
       }
+      .myClass {
+        color: blue;
+        background: black;
+      }
     </style>
   </head>
   <body>
@@ -40,7 +44,10 @@
       <div class="myDiv"></div>
     </div>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $("p.para1").css({ color: "red", background: "#ccc" });
+        $("p.para2").addClass("myClass");
+      });
     </script>
   </body>
 </html>
