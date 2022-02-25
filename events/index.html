@@ -140,8 +140,8 @@
           console.log(e.target.value);
         });*/
         //CHANGE
-        $("select#gender").change(function () {
-          alert("Changed");
+        $("select#gender").change(function (e) {
+          alert(e.target.value);
         });
       });
     </script>
