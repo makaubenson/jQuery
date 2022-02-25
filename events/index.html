@@ -43,7 +43,7 @@
       </p>
       <!-- <h1 id="coords"></h1> -->
       <hr />
-      <form>
+      <form id="form">
         <label>Name</label><br />
         <input type="text" id="name" name="name" /><br />
         <label>Email</label><br />
@@ -142,6 +142,11 @@
         //CHANGE
         $("select#gender").change(function (e) {
           alert(e.target.value);
+        });
+        //SUBMIT
+        $("#form").submit(function (e) {
+          e.preventDefault();
+          console.log("Submitted");
         });
       });
     </script>
