@@ -41,7 +41,7 @@
       <button id="btn1">Button 1</button>
       <p class="para1">This is a pragaraph</p>
       <p class="para2">This is another pragaraph</p>
-      <div class="myDiv"></div>
+      <div id="myDiv"></div>
     </div>
     <script>
       $(document).ready(function () {
@@ -51,6 +51,9 @@
         $("#btn1").click(function () {
           $("p.para2").toggleClass("myClass");
         });
+        //$("#myDiv").text("Hello World");
+        $("#myDiv").html("<h3>Hello World</h3>");
+        alert($("#myDiv").text());
       });
     </script>
   </body>
